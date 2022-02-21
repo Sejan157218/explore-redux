@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-undef
-export default reducer = (state = 0, action) => {
+const reducer = (state = 0, action) => {
   if (action.payload === "deposit") {
     return state + action.amount;
   }
@@ -10,3 +9,5 @@ export default reducer = (state = 0, action) => {
       return state;
   }
 };
+
+export default reducer;
